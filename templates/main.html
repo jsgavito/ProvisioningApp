@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciena Provisioning Tool</title>
+</head>
+<body>
+<h1>Ciena Provisioning Tool / MACSec</h1>
+<form action="shortenurl">
+    <label for="text">Enter IP Address</label>
+    <dd><input type="text" name="IP" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$" value="" required>
+    </dd>
+    <label for="text">Enter VLAN </label>
+    <dd><input type="text" name="VLAN" pattern="^(?:[1-9]\d{0,2}|[1-3]\d{3}|40(?:[0-8]\d|9[0-3]))(?:[,-] *(?:[1-9]\d{0,2}|[1-3]\d{3}|40(?:[0-8]\d|9[0-3]))?)*$" value="" required></dd>
+    <label for="text">Enter MAC Address</label>
+    <dd><input type="text" name="MAC" pattern= "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$" value="" required></dd>
+    <label for="text">Key Chain</label>
+    <dd><input type="text" name="KC" pattern="[0-9a-fA-F*]*" value="" required></dd>
+    <label for="text">Connection Association Name</label>
+    <dd><input type="text" name="CA" value="" required></dd>
+    <label for="text">Key interval</label>
+    <dd><input type="text" name="interval" value="" required></dd>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

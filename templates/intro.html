@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Ciena Provisioning Tool</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<header>
+	<div class="navbar-header">
+      <a class="navbar-brand" href="/">
+	  <img src="static/ciena.jpg" width="10%" height="auto">
+	  
+	  </a>
+    </div>
+	
+	
+	<div class = "container-fluid"> 	
+
+
+
+
+	
+	<ul class="nav navbar-nav navbar-right">
+		  
+
+							
+  <dt><label for="username">Username</label>
+  <dd><input id="username" name="username" type="text" value="">
+  
+  </dd>
+							
+  <dt><label for="password">Password</label>
+  <dd><input id="password" name="password" type="password" value="">
+  
+  </dd>
+
+							
+  <dt><label for="ipaddress">IP Address</label>
+  <dd><input id="ipaddress" name="ipaddress" type="text" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$" value="">
+  
+  </dd>
+						  </dl>
+						  <p><input type=submit value=Login>
+						</form>
+
+				</div>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+      </ul>
+
+	<p>
+		<a href="http://127.0.0.1:5000/main.html">link text start</a>
+
+	</p>
+	
+	</div>
+	
+</header>
+
+
+
+<!-- -->
+    
+		<a href="/dashboard/">
+		<video autoplay="autoplay" muted="muted" poster="/static/videos/python-programming-tutorials-main.png" style="width:100%; max-height:80%" >
+		<source src="/static/videos/python-programming-tutorials-main.mp4" type="video/mp4" type="video/mp4">
+		<source src="/static/videos/python-programming-tutorials-main.webm" type="video/webm">
+		</video>
+		</a>
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>
+
+</html>	
